@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  height: 200px;
+  border: 2px solid;
+  background-color: #29394b;
+  padding: 10px;
+  color: #bdc2c5;
+}
+h2 {
+  font-size: 1.6em;
+  flex: 1;
+}
+.out-of-stock {
+  color: #d93a3e;
+}
+.need-order {
+  color: yellow;
+}
+.save {
+  color: green;
+}
+.delete {
+  display: block;
+  background-color: #ec4342;
+  padding: 4px;
+  font-size: .8em;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.details {
+  display: block;
+  background-color: #37ad79;
+  padding: 4px;
+  font-size: .8em;
+  border-radius: 4px;
+  color: #ffffff;
+  text-decoration: none;
+}

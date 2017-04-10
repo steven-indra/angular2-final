@@ -1,0 +1,38 @@
+<section>
+  <header>
+    <h1>My Market Stock</h1>
+    <p class="description">Keeping track of my market's fruits and vegetables stock</p>
+  </header>
+  <a routerLink="/add">
+    <img src="media/01.png" class="icon" />
+  </a>
+  <a routerLink="/report">
+    report
+  </a>
+  <div> Category
+    <a routerLink="/all&">
+      all
+    </a>
+    <a routerLink="/vegetables&">
+      vegetables
+    </a>
+    <a routerLink="/fruits&">
+      fruits
+    </a>
+  </div>
+  <div> Stock Status
+    <a routerLink="/&all">
+      all
+    </a>
+    <a routerLink="/&out-of-order">
+      out-of-stock
+    </a>
+    <a routerLink="/&need-order">
+      need-order
+    </a>
+    <a routerLink="/&save">
+      save
+    </a>
+  </div>
+  <router-outlet></router-outlet>
+</section>

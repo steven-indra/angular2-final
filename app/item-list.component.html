@@ -1,0 +1,18 @@
+<header>
+    <div>
+        Your Filter:<br>
+        Category: {{category}}<br>
+        Stock Status: {{stockStatus}}
+    </div>
+    <div>
+        {{ items | nameList }}
+    </div>
+    
+</header>
+<section>
+  <ms-item
+    [ngClass]="{'vegetables':eachItem.category === 'Vegetables', 'fruits':eachItem.category === 'Fruits'}"
+    *ngFor="let eachItem of items"
+    [item]="eachItem"
+    (delete)="onItemDelete($event)"></ms-item>
+</section>

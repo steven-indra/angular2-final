@@ -1,0 +1,14 @@
+<h2>{{ item.name }}</h2>
+<div>{{ item.category }}</div>
+<div [msStock]='item.stock'>Stock : {{ item.stock }}</div>
+<div class="tools">
+    <a class="delete" (click)="onDelete()">
+    remove
+  </a>
+    <a class="details" (click)="addStock()">
+    add stock
+  </a>
+    <a class="details" (click)="reduceStock()">
+    reduce stock
+  </a>
+</div>
